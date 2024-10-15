@@ -10,7 +10,7 @@ import React, {
 
 type UserInfoContextType ={
   userInfo: UserInfo | null;
-  // eslint-disable-next-line no-unused-vars
+  isLoading: boolean;
   setUserInfo: (newUserInfo: UserInfo) => void;
 }
 
@@ -28,6 +28,7 @@ export const UserInfoProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [userInfo, setUserInfoState] = useState<UserInfo | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
   const setUserInfo = (newUserInfo: UserInfo): void => {
     localStorage.setItem("userInfo", JSON.stringify(newUserInfo));
     setUserInfoState(newUserInfo);
@@ -38,10 +39,11 @@ export const UserInfoProvider: React.FC<{ children: ReactNode }> = ({
     if (storedUserInfo) {
       setUserInfo(storedUserInfo);
     }
+    setIsLoading(false);
   }, []);
 
   return (
-    <UserInfoContext.Provider value={{ userInfo, setUserInfo }}>
+    <UserInfoContext.Provider value={{ userInfo, setUserInfo, isLoading }}>
       {children}
     </UserInfoContext.Provider>
   );
