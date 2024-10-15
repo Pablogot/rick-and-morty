@@ -1,7 +1,7 @@
+import { Info } from "@/generated/graphql";
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 import { Button, Flex, Text } from "@chakra-ui/react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Info } from "../../../generated/graphql";
 
 type PaginationProps = {
   info: Info;

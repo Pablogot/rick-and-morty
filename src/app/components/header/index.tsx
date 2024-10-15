@@ -8,8 +8,8 @@ import {
   Heading,
   useColorMode,
 } from "@chakra-ui/react";
-import RickSvgLogo from "../logo";
-import { UserInfoModal } from "../user-info-modal";
+import RickSvgLogo from "./logo";
+import { UserInfoModal } from "./user-info-modal";
 
 export const Header = (): JSX.Element => {
   const { userInfo } = useUserInfo();

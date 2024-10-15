@@ -1,3 +1,4 @@
+import { Character, Query } from "@/generated/graphql";
 import { gql, useQuery } from "@apollo/client";
 import {
   Box,
@@ -10,11 +11,10 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { Character, Query } from "../../../generated/graphql";
-import CharacterModal from "../character-modal";
 import Loading from "../loading";
-import Pagination from "../pagination";
-import { Status } from "../status";
+import CharacterModal from "./character-modal";
+import Pagination from "./pagination";
+import { Status } from "./status";
 
 export const GET_CHARACTERS = gql`
   query GetCharacters($page: Int!) {

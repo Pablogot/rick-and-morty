@@ -11,7 +11,8 @@ import {
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
-import { UserInfoForm } from "../user-info-form";
+
+import { UserInfoForm } from "../../user-info-form";
 import { getUserButtonText } from "./util";
 
 /**
