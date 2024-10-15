@@ -34,7 +34,7 @@ const Pagination = ({ info, page }: PaginationProps): JSX.Element => {
   const { next, prev, pages } = info;
 
   return (
-    <Flex py="8" alignItems="center" justifyContent="center">
+    <Flex pt="8" pb="16" alignItems="center" justifyContent="center">
       <Flex gap={4}>
         <Button
           size="xs"
