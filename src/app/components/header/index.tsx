@@ -18,12 +18,6 @@ export const Header = (): JSX.Element => {
 
   return (
     <Box
-      bg={colorMode === "light" ? "gray.50" : "gray.900"}
-      bgGradient={
-        colorMode === "light"
-          ? "linear(to-b, gray.100, white)"
-          : "gray.900"
-      }
       pt="20px"
       pb="20px"
     >

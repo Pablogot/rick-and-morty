@@ -3,7 +3,7 @@ import {
   AlertIcon,
   AlertTitle,
   Container,
-  Flex
+  Flex,
 } from "@chakra-ui/react";
 
 const ErrorComponent = (): JSX.Element => (
