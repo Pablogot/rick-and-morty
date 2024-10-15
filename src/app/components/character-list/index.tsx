@@ -6,10 +6,10 @@ import {
   Flex,
   Grid,
   Heading,
-  Image,
   Stack,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import { useState } from "react";
 import Loading from "../loading";
 import CharacterModal from "./character-modal";
@@ -112,14 +112,9 @@ const CharacterList = ({ page }: CharacterListProps): JSX.Element => {
               bg={backgroundColor}
               mx={{ base: "auto" }}
             >
-              <Image
-                fallback={<Box borderTopRadius="inherit" h="300" w="300"></Box>}
-                width="300px"
-                height="300px"
-                borderTopRadius="inherit"
-                src={image}
-                alt={name}
-              />
+              <Box borderTopRadius="inherit" h="300" w="300">
+                <Image style={{ borderTopRightRadius: "inherit", borderTopLeftRadius: "inherit" }} width={300} height={300} src={image} alt={name} />
+              </Box>
               <Stack spacing="4" p="4">
                 <Flex
                   direction="column"
