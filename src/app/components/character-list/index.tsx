@@ -116,7 +116,6 @@ const CharacterList = ({ page }: CharacterListProps): JSX.Element => {
                 fallback={<Box borderTopRadius="inherit" h="300" w="300"></Box>}
                 width="300px"
                 height="300px"
-                loading="lazy"
                 borderTopRadius="inherit"
                 src={image}
                 alt={name}
