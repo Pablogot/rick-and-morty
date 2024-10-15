@@ -5,7 +5,7 @@ import { render, screen, waitFor } from "@testing-library/react";
 import CharacterList from "./index";
 import { queryMock } from "./mocks";
 
-jest.mock("../character-modal", () => ({
+jest.mock("./character-modal", () => ({
   __esModule: true,
   default: (): JSX.Element => <div data-testid="character-modal" />,
 }));
