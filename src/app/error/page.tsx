@@ -2,11 +2,10 @@
 
 import ErrorComponent from "../components/error-component";
 
-export default function Error({ reset }: { reset: () => void }): JSX.Element {
-  return (
-    <div>
-      <ErrorComponent />
-      <button onClick={() => reset()}>Try again</button>
-    </div>
-  );
-}
+const Error = ({ reset }: { reset: () => void }): JSX.Element => (
+  <div>
+    <ErrorComponent />
+    <button onClick={() => reset()}>Try again</button>
+  </div>
+);
+export default Error;
