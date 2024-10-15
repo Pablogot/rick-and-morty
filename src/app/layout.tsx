@@ -1,7 +1,7 @@
 import { Roboto } from "next/font/google";
 import { ReactElement } from "react";
 import { ClientRoot } from "./ClientRoot";
-import ErrorBoundary from "./components/error-boundary";
+import ErrorBoundary from "./error/error-boundary";
 
 const roboto = Roboto({
   weight: "400",

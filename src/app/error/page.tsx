@@ -1,6 +1,6 @@
 "use client";
 
-import ErrorComponent from "../components/error-component";
+import ErrorComponent from "./error-component";
 
 const Error = (): JSX.Element => <ErrorComponent />;
 export default Error;
