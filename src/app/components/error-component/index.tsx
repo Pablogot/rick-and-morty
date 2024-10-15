@@ -1,10 +1,9 @@
 import {
   Alert,
-  AlertDescription,
   AlertIcon,
   AlertTitle,
   Container,
-  Flex,
+  Flex
 } from "@chakra-ui/react";
 
 const ErrorComponent = (): JSX.Element => (
@@ -31,10 +30,6 @@ const ErrorComponent = (): JSX.Element => (
       <AlertTitle mt={4} mb={1} fontSize="lg">
           Something went wrong!
       </AlertTitle>
-      <AlertDescription maxWidth="sm">
-          Thanks for submitting your application. Our team will get back to you
-          soon.
-      </AlertDescription>
     </Alert>
   </Container>
 );
