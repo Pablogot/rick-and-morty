@@ -16,13 +16,14 @@ Welcome to the Rick and Morty Character Explorer! This Next.js application allow
 
 ## 🛠 Tech Stack
 
-- [Next.js](https://nextjs.org/) - React framework
+- [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/) 
 - [Chakra UI](https://chakra-ui.com/) 
 - [Apollo Client](https://www.apollographql.com/docs/react/) 
 - [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
 ## 🏗 Project Structure
+```
 rick-and-morty-explorer/
 ├── src/
 │ ├── app/
@@ -46,7 +47,7 @@ rick-and-morty-explorer/
 ├── tsconfig.json
 ├── jest.config.ts
 └── package.json
-
+```
 ## 🚦 Getting Started
 
 1. Clone the repository:
