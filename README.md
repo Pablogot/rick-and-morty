@@ -1,7 +1,5 @@
 # Rick and Morty Character Explorer
 
-![Rick and Morty Logo](public/images/rick-and-morty-logo.png)
-
 ## 🌌 Overview
 
 Welcome to the Rick and Morty Character Explorer! This Next.js application allows users to dive into the multiverse of Rick and Morty, exploring characters from various dimensions and realities.
